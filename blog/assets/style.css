@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #0e0f13;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #0f172a;            /* темно-синий */
+    color: #ffffff;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+header a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .2s ease;
+}
+
+header a:hover {
+    color: #38bdf8;                  /* голубой при наведении */
+}
+
+header span {
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+/* аватар */
+header img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+/* разделение логики */
+header > a:first-child {
+    margin-right: auto;              /* Главная слева, остальное справа */
+}
+
+/* кнопки */
+header a {
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+header a:hover {
+    background: rgba(255,255,255,0.06);
+}
+
+
+/* ===== PAGE ===== */
+
+.page-content {
+    flex: 1;
+    padding: 30px 20px;
+}
+
+/* ===== CARDS ===== */
+
+.form-card {
+    background: #141722;
+    border-radius: 14px;
+    padding: 22px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+}
+
+/* ===== ARTICLES ===== */
+
+.article-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+
+.article-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.article-author {
+    font-size: 13px;
+    opacity: 0.6;
+    margin-bottom: 12px;
+}
+
+/* ===== RATING ===== */
+
+.rating {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.rating a {
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.rating a:hover {
+    opacity: 1;
+}
+
+/* ===== FORMS ===== */
+
+input,
+textarea {
+    width: 100%;
+    background: #1b1e26;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-row {
+    margin-bottom: 14px;
+}
+
+/* ===== BUTTONS ===== */
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background: #4f7cff;
+    color: #fff;
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+/* ===== PROFILE ===== */
+
+.profile-box {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+/* ===== FOOTER ===== */
+
+.site-footer {
+    text-align: center;
+    padding: 14px;
+    font-size: 13px;
+    opacity: 0.5;
+}
